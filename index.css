@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  background: #E9E9E9 url(image/bg.png) no-repeat 100% 55px;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  font-family: 'Merriweather', serif;
+  height: 55px;
+  background: white;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+nav {
+  font-size: 24px;
+  line-height: 55px;
+  padding-left: 30px;
+}
+
+nav a {
+  color: #222222;
+}
+
+
+.heading h2 {
+  font-size: 46px;
+  font-weight: 700;
+  width: 777px;
+  margin: 44px auto 0;
+  text-align: center;
+}
+.heading span {
+  color: #7A6FFC;
+}
+
+
+.video {
+  margin-top: 40px;
+}
+.video-container {
+  text-align: center;
+}
+.video iframe {
+  border: 11px solid white;
+  box-shadow: 2px 4px 4px rgba(39, 38, 54, 0.06);
+}
+
+.contact {
+  margin: 70px auto 50px;
+}
+
+.contact-grp {
+  width: 570px;
+  margin: 0 auto;
+}
+
+.contact h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #7A6FFC;
+  font-size: 18px;
+  font-weight: 600;
+}
+.contact-grp > div {
+  display: grid;
+  grid-template-columns: 90px auto;
+}
+.contact-title {
+  color: #4A4949;
+  margin: 0;
+  font-size: 17px;
+}
+
+.contact-content {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+}
+.contact-content a {
+  color: black;
+}
+.contact-content a:hover {
+  color: #7A6FFC;
+}
+
+.contact-email {
+  margin-top: 4px;
+}
+
+.contact-phone {
+  margin-top: 4px;
+}
+
+
+@media(max-width: 900px) {
+  .heading h2 {
+    font-size: 38px;
+    width: 650px;
+  }
+}
+
+@media(max-width: 700px) {
+  .heading h2 {
+    font-size: 34px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  .contact-grp {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .video iframe {
+    width: 90% !important;
+    height: auto !important;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media(max-width: 700px) { 
+  .heading h2 {
+    font-size: 30px;
+  }
+  .contact {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .contact-grp > div {
+    display: grid;
+    grid-template-columns: 90px auto;
+  }
+}
